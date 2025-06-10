@@ -30,26 +30,26 @@ public class Cadastro extends JFrame {
         
         adicionarComponente(mainPanel, lblTitulo, 0, 0, 6, GridBagConstraints.WEST, 0.0, new Insets(0, 0, 30, 0), GridBagConstraints.WEST);
 
-        adicionarComponenteComRotulo(mainPanel, "Tipo...", comboTipo = new JComboBox<>(new String[]{"Física", "Jurídica"}), 0, 1, 1, GridBagConstraints.HORIZONTAL, 0.1);
-        adicionarComponenteComRotulo(mainPanel, "CPF / CNPJ...", txtCpfCnpj = new JTextField(25), 2, 1, 1, GridBagConstraints.HORIZONTAL, 0.4);
+        adicionarComponenteComRotulo(mainPanel, "Tipo", comboTipo = new JComboBox<>(new String[]{"Física", "Jurídica"}), 0, 1, 1, GridBagConstraints.HORIZONTAL, 0.1);
+        adicionarComponenteComRotulo(mainPanel, "CPF / CNPJ", txtCpfCnpj = new JTextField(25), 2, 1, 1, GridBagConstraints.HORIZONTAL, 0.4);
 
-        adicionarComponente(mainPanel, criarRotulo("Fornecedor..."), 4, 1, 1, GridBagConstraints.NONE, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
+        adicionarComponente(mainPanel, criarRotulo("Fornecedor"), 4, 1, 1, GridBagConstraints.NONE, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
         checkFornecedor = new JCheckBox();
         adicionarComponente(mainPanel, checkFornecedor, 5, 1, 1, GridBagConstraints.NONE, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.WEST);
 
-        adicionarComponenteComRotulo(mainPanel, "Nome...", txtNome = new JTextField(40), 0, 2, 5, GridBagConstraints.HORIZONTAL, 1.0);
+        adicionarComponenteComRotulo(mainPanel, "Nome", txtNome = new JTextField(40), 0, 2, 5, GridBagConstraints.HORIZONTAL, 1.0);
 
-        adicionarComponenteComRotulo(mainPanel, "RG / Inscrição Estadual...", txtRgIe = new JTextField(20), 0, 3, 1, GridBagConstraints.HORIZONTAL, 0.5);
-        adicionarComponenteComRotulo(mainPanel, "Órgão Expedidor...", txtOrgaoExpedidor = new JTextField(20), 2, 3, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "RG / Inscrição Estadual", txtRgIe = new JTextField(20), 0, 3, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "Órgão Expedidor", txtOrgaoExpedidor = new JTextField(20), 2, 3, 1, GridBagConstraints.HORIZONTAL, 0.5);
 
-        adicionarComponenteComRotulo(mainPanel, "Email...", txtEmail = new JTextField(35), 0, 4, 1, GridBagConstraints.HORIZONTAL, 0.5);
-        adicionarComponenteComRotulo(mainPanel, "CEP...", txtCep = new JTextField(15), 2, 4, 4, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "Email", txtEmail = new JTextField(35), 0, 4, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "CEP", txtCep = new JTextField(15), 2, 4, 4, GridBagConstraints.HORIZONTAL, 0.5);
 
         adicionarComponente(mainPanel, criarRotulo("País"), 0, 5, 1, GridBagConstraints.HORIZONTAL, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
         JTextField txtPais = criarCampoFixo("BRASIL");
         txtPais.setPreferredSize(new Dimension(200, 30));
         adicionarComponente(mainPanel, txtPais, 1, 5, 1, GridBagConstraints.HORIZONTAL, 0.5, new Insets(5, 5, 5, 5), GridBagConstraints.WEST);
-        adicionarComponente(mainPanel, criarRotulo("UF..."), 2, 5, 1, GridBagConstraints.HORIZONTAL, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
+        adicionarComponente(mainPanel, criarRotulo("UF"), 2, 5, 1, GridBagConstraints.HORIZONTAL, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
 
         txtUfSigla = new JTextField(2);
         txtUfNome = criarCampoFixo("");
@@ -58,17 +58,17 @@ public class Cadastro extends JFrame {
         ufPanel.add(txtUfNome, BorderLayout.CENTER);
         adicionarComponente(mainPanel, ufPanel, 3, 5, 3, GridBagConstraints.HORIZONTAL, 0.5, new Insets(5, 5, 5, 5), GridBagConstraints.WEST);
         
-        adicionarComponenteComRotulo(mainPanel, "Município...", txtMunicipio = criarCampoFixo(""), 0, 6, 5, GridBagConstraints.HORIZONTAL, 1.0);
+        adicionarComponenteComRotulo(mainPanel, "Município", txtMunicipio = criarCampoFixo(""), 0, 6, 5, GridBagConstraints.HORIZONTAL, 1.0);
 
-        adicionarComponenteComRotulo(mainPanel, "Logradouro...", txtLogradouro = new JTextField(40), 0, 7, 5, GridBagConstraints.HORIZONTAL, 1.0);
+        adicionarComponenteComRotulo(mainPanel, "Logradouro", txtLogradouro = new JTextField(40), 0, 7, 5, GridBagConstraints.HORIZONTAL, 1.0);
 
-        adicionarComponenteComRotulo(mainPanel, "Número...", txtNumero = new JTextField(10), 0, 8, 1, GridBagConstraints.HORIZONTAL, 0.5);
-        adicionarComponenteComRotulo(mainPanel, "Complemento...", txtComplemento = new JTextField(25), 2, 8, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "Número", txtNumero = new JTextField(10), 0, 8, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "Complemento", txtComplemento = new JTextField(25), 2, 8, 1, GridBagConstraints.HORIZONTAL, 0.5);
 
-        adicionarComponenteComRotulo(mainPanel, "Bairro...", txtBairro = new JTextField(25), 0, 9, 1, GridBagConstraints.HORIZONTAL, 0.5);
-        adicionarComponenteComRotulo(mainPanel, "Telefone...", txtTelefone = new JTextField(15), 2, 9, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "Bairro", txtBairro = new JTextField(25), 0, 9, 1, GridBagConstraints.HORIZONTAL, 0.5);
+        adicionarComponenteComRotulo(mainPanel, "Telefone", txtTelefone = new JTextField(15), 2, 9, 1, GridBagConstraints.HORIZONTAL, 0.5);
         
-        adicionarComponente(mainPanel, criarRotulo("Situação..."), 4, 9, 1, GridBagConstraints.NONE, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
+        adicionarComponente(mainPanel, criarRotulo("Situação"), 4, 9, 1, GridBagConstraints.NONE, 0.0, new Insets(5, 5, 5, 5), GridBagConstraints.CENTER);
         radioAtivo = new JRadioButton("Ativo");
         radioInativo = new JRadioButton("Inativo");
         grupoSituacao = new ButtonGroup();

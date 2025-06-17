@@ -19,10 +19,10 @@ public class Cadastro extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1050, 550);
         setLocationRelativeTo(null);
-        setMinimumSize(new Dimension(800, 500)); // Define um tamanho mínimo para a janela
+        setMinimumSize(new Dimension(800, 500));
         
         JPanel mainPanel = new JPanel(new GridBagLayout());
-        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Adiciona uma margem
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JLabel lblTitulo = new JLabel("Cadastro de Pessoa");
         lblTitulo.setFont(new Font("Arial", Font.BOLD, 30));
